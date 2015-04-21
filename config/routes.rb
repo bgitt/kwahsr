@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
   devise_for :users
   get 'welcome/index'
 
@@ -10,6 +11,8 @@ Rails.application.routes.draw do
 
   root 'welcome#index'
 
+=======
+>>>>>>> 29cc304b24bf1b6a5f1e5d32d0a3789e01ee72fa
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
