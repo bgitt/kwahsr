@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  couseID: 1
+  courseName: MyString
+  content: MyText
+  courseNews: MyText
+  Location: MyString
+  Description: MyText
+  courseType: 1
+  departmentID: 1
+
+two:
+  couseID: 1
+  courseName: MyString
+  content: MyText
+  courseNews: MyText
+  Location: MyString
+  Description: MyText
+  courseType: 1
+  departmentID: 1

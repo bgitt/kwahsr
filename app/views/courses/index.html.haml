@@ -1,0 +1,11 @@
+.wrapper_with_padding
+	#notes.clearfix
+		- unless @courses.blank?
+			- @courses.each do |course|
+				%a{ href: (url_for [course])}
+					.course
+						%p.title= course.courseName
+						%p.date= time_ago_in_words(course.created_at)
+		- else
+			%h2 ICON
+			%button= link_to "New COurse", new_course_path

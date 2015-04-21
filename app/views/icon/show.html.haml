@@ -1,0 +1,6 @@
+%h1= @course.courseNews
+%p= @course.content
+
+= link_to "All Courses", icon_path
+= link_to "Edit", edit_icon_path(@course)
+= link_to "Delete", icon_path(@course), method: :delete, data: {confirm: "Are you sure?" }

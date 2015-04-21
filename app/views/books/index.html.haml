@@ -1,0 +1,11 @@
+.wrapper_with_padding
+	#notes.clearfix
+		- unless @books.blank?
+			- @books.each do |book|
+				%a{ href: (url_for [book])}
+					.book
+						%p.title= book.title
+						%p.date= time_ago_in_words(book.created_at)
+		- else
+			%h2 LIB
+			%button= link_to "New book", new_book_path
